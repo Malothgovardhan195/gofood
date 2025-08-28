@@ -1,0 +1,147 @@
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme .navbar {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #333;
+}
+
+.dark-theme .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #ffffff;
+}
+
+.dark-theme .card-body {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .table {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-theme .table thead th {
+    background-color: #2d2d2d;
+    border-color: #333;
+}
+
+.dark-theme .table td, 
+.dark-theme .table th {
+    border-color: #333;
+}
+
+.dark-theme .alert-info {
+    background-color: #0d47a1;
+    border-color: #1565c0;
+    color: #ffffff;
+}
+
+.dark-theme .alert-success {
+    background-color: #2e7d32;
+    border-color: #388e3c;
+    color: #ffffff;
+}
+
+.dark-theme .form-control,
+.dark-theme .form-select {
+    background-color: #2d2d2d;
+    border-color: #555;
+    color: #ffffff;
+}
+
+.dark-theme .form-control:focus,
+.dark-theme .form-select:focus {
+    background-color: #2d2d2d;
+    border-color: #28a745;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.dark-theme .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.dark-theme .btn-outline-danger:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #ffffff;
+}
+
+.dark-theme .container {
+    background-color: transparent;
+}
+
+.dark-theme .footer {
+    background-color: #1f1f1f;
+    border-top: 1px solid #333;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Rating Stars */
+.rating-component .star.active {
+    color: #ffc107 !important;
+}
+
+.rating-component .star:hover {
+    color: #ffc107 !important;
+}
+
+/* Search and Filter */
+.dark-theme .input-group-text {
+    background-color: #2d2d2d;
+    border-color: #555;
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom scrollbar for dark theme */
+.dark-theme::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dark-theme::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 6px;
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}

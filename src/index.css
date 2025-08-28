@@ -1,0 +1,220 @@
+/* Import Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Import dark theme */
+@import './darkTheme.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'NHaasGroteskDSPro-65Md' !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link{
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+#carousel{
+  max-height: 500px;
+}
+
+.carousalImg{
+  object-fit: contain !important;
+}
+
+/* Enhanced Card Styles */
+.card-hover {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+.card-hover:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Button Enhancements */
+.btn {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Badge Enhancements */
+.badge {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Search and Filter Styles */
+.search-filter-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Rating Component Styles */
+.rating-component {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.rating-component .star {
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.2em;
+}
+
+.rating-component .star:hover,
+.rating-component .star.active {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+.rating-component.size-sm .star {
+  font-size: 0.9em;
+}
+
+.rating-component.size-lg .star {
+  font-size: 1.5em;
+}
+
+/* Loading Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Success Animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-in {
+  animation: bounceIn 0.5s ease-out;
+}
+
+/* Analytics Page Styles */
+.analytics-card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.analytics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .card-hover {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  .theme-toggle {
+    top: 70px;
+    right: 10px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28a745;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #20c997;
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: fadeInUp 0.5s ease-out;
+}

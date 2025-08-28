@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h5><i class="fas fa-mobile-alt me-2"></i>UPI Payment Test</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Test UPI redirection - Amount: <strong>₹100</strong></p>
+                        
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <button class="btn btn-primary w-100" onclick="testGooglePay()">
+                                    <i class="fab fa-google-pay fa-2x d-block mb-2"></i>
+                                    Google Pay
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-success w-100" onclick="testPhonePe()">
+                                    <i class="fas fa-mobile-alt fa-2x d-block mb-2"></i>
+                                    PhonePe
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-info w-100" onclick="testPaytm()">
+                                    <i class="fas fa-wallet fa-2x d-block mb-2"></i>
+                                    Paytm
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-warning w-100" onclick="testGenericUPI()">
+                                    <i class="fas fa-qrcode fa-2x d-block mb-2"></i>
+                                    Generic UPI
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <div class="alert alert-info">
+                                <strong>Testing Instructions:</strong>
+                                <ol class="mb-0">
+                                    <li>Click any UPI app button above</li>
+                                    <li>Check if the app opens or browser shows "Open app" dialog</li>
+                                    <li>If nothing happens, the URL scheme might not be supported</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id="result" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showResult(appName, url) {
+            document.getElementById('result').innerHTML = `
+                <div class="alert alert-primary">
+                    <strong>${appName} URL:</strong><br>
+                    <small style="word-break: break-all;">${url}</small>
+                </div>
+            `;
+        }
+
+        function testGooglePay() {
+            const url = 'tez://upi/pay?pa=gofood@okaxis&pn=GoFood&am=100&cu=INR&tn=Test Payment';
+            showResult('Google Pay', url);
+            window.location.href = url;
+        }
+
+        function testPhonePe() {
+            const url = 'phonepe://pay?pa=gofood@okaxis&pn=GoFood&am=100&cu=INR&tn=Test Payment';
+            showResult('PhonePe', url);
+            window.location.href = url;
+        }
+
+        function testPaytm() {
+            const url = 'paytmmp://pay?pa=gofood@okaxis&pn=GoFood&am=100&cu=INR&tn=Test Payment';
+            showResult('Paytm', url);
+            window.location.href = url;
+        }
+
+        function testGenericUPI() {
+            const url = 'upi://pay?pa=gofood@okaxis&pn=GoFood&am=100&cu=INR&tn=Test Payment';
+            showResult('Generic UPI', url);
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

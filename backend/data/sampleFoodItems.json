@@ -1,0 +1,137 @@
+[
+    {
+        "CategoryName": "Biryani/Rice",
+        "name": "Veg Biryani",
+        "img": "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?w=500",
+        "options": [
+            {
+                "half": "100",
+                "full": "180"
+            }
+        ],
+        "description": "Fragrant vegetable biryani with seasonal vegetables and aromatic spices"
+    },
+    {
+        "CategoryName": "Biryani/Rice",
+        "name": "Jeera Rice",
+        "img": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?w=500",
+        "options": [
+            {
+                "half": "80",
+                "full": "140"
+            }
+        ],
+        "description": "Aromatic basmati rice cooked with cumin seeds and ghee"
+    },
+    {
+        "CategoryName": "Biryani/Rice",
+        "name": "Paneer Biryani",
+        "img": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "options": [
+            {
+                "half": "120",
+                "full": "200"
+            }
+        ],
+        "description": "Delicious biryani with marinated paneer and fragrant basmati rice"
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Margherita Pizza",
+        "img": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=500",
+        "options": [
+            {
+                "regular": "200",
+                "medium": "350",
+                "large": "450"
+            }
+        ],
+        "description": "Classic pizza with fresh tomatoes, mozzarella cheese, and basil"
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Veggie Supreme Pizza",
+        "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "options": [
+            {
+                "regular": "250",
+                "medium": "400",
+                "large": "550"
+            }
+        ],
+        "description": "Loaded with bell peppers, onions, mushrooms, olives, and cheese"
+    },
+    {
+        "CategoryName": "Pizza",
+        "name": "Paneer Tikka Pizza",
+        "img": "https://plus.unsplash.com/premium_photo-1679924471066-dd984e92f395?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "options": [
+            {
+                "regular": "280",
+                "medium": "450",
+                "large": "600"
+            }
+        ],
+        "description": "Pizza topped with marinated paneer tikka, onions, and bell peppers"
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Paneer Tikka",
+        "img": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500",
+        "options": [
+            {
+                "half": "180",
+                "full": "320"
+            }
+        ],
+        "description": "Grilled cottage cheese marinated with spices and herbs"
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Samosa",
+        "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "options": [
+            {
+                "piece": "25",
+                "plate": "120"
+            }
+        ],
+        "description": "Crispy triangular pastries filled with spiced potatoes and peas"
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Veg Spring Rolls",
+        "img": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500",
+        "options": [
+            {
+                "small": "100",
+                "large": "180"
+            }
+        ],
+        "description": "Crispy spring rolls filled with fresh vegetables and served with sauce"
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Aloo Tikki",
+        "img": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500",
+        "options": [
+            {
+                "piece": "30",
+                "plate": "150"
+            }
+        ],
+        "description": "Crispy potato patties served with chutneys and yogurt"
+    },
+    {
+        "CategoryName": "Starter",
+        "name": "Veg Pakora",
+        "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "options": [
+            {
+                "small": "80",
+                "large": "140"
+            }
+        ],
+        "description": "Deep-fried fritters made with mixed vegetables and gram flour"
+    }
+]

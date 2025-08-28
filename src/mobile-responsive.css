@@ -1,0 +1,140 @@
+/* Mobile Responsive Fixes for Login/Signup */
+
+/* Global mobile fixes */
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  /* Login/Signup Background adjustments */
+  .auth-background {
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    min-height: 100vh !important;
+    background-size: cover !important;
+    padding: 10px !important;
+  }
+  
+  /* Form container improvements - Override Bootstrap classes */
+  .auth-form,
+  form.auth-form,
+  .container form {
+    width: 95% !important;
+    max-width: 400px !important;
+    margin: 1rem auto !important;
+    margin-top: 2rem !important;
+    padding: 1.5rem !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Override Bootstrap responsive classes on mobile */
+  .w-100, .w-md-75, .w-lg-50 {
+    width: 95% !important;
+    max-width: 400px !important;
+  }
+  
+  /* Input field improvements */
+  .form-control {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    padding: 15px !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  
+  /* Button improvements */
+  .btn {
+    padding: 15px 25px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    margin: 10px 5px !important;
+    min-width: 120px !important;
+    min-height: 50px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  /* Form groups */
+  .m-3, .form-group {
+    margin: 15px 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Location button specific */
+  .location-btn {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+  }
+  
+  /* Form labels */
+  .form-label {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+  }
+  
+  /* Form text helpers */
+  .form-text {
+    font-size: 12px !important;
+    color: #ccc !important;
+  }
+  
+  /* Navbar mobile adjustments */
+  .navbar {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  /* Container padding on mobile */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    max-width: 100% !important;
+  }
+  
+  /* Link buttons */
+  .btn-danger, .btn-success {
+    margin: 5px 0 !important;
+    text-align: center !important;
+  }
+}
+
+/* Tablet responsive (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .auth-form {
+    width: 75% !important;
+    margin-top: 3rem !important;
+  }
+}
+
+/* Desktop (992px+) */
+@media (min-width: 992px) {
+  .auth-form {
+    width: 50% !important;
+    margin-top: 5rem !important;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (pointer: coarse) {
+  .btn {
+    min-height: 44px !important; /* Apple's recommended touch target */
+    min-width: 44px !important;
+  }
+  
+  .form-control {
+    min-height: 44px !important;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .auth-background {
+    background-image: url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") !important;
+  }
+}
